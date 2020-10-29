@@ -12,8 +12,12 @@ class ChatRoom extends React.Component {
   }
 
   onConfirm = () => {
-    this.props.createUser(this.state.name)
-    this.props.history.push('/joinRoom');
+    if (this.state.name === '') {
+      alert('กรุณาใส่ชื่อ')
+    } else {
+      this.props.createUser(this.state.name)
+      this.props.history.push('/joinRoom');
+    }
   }
 
   render() {

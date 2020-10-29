@@ -31,10 +31,12 @@ class CreateRoom extends React.Component {
 
   onConfirm = (roomList, createRoom) => {
     const rooms = roomList.room ? roomList.room : []
-    console.log('rooms: ', rooms)
     const hasRoom = rooms.find(item => item.roomName === this.state.roomName)
 
-    if (!hasRoom) {
+    if (this.state.roomName === '') {
+      alert('กรุณาใส่ชื่อห้อง')
+    }
+    else if (!hasRoom) {
         createRoom({ variables: { roomName: this.state.roomName } });
         this.props.createRoom(this.state.roomName)
         this.props.history.push('/chatRoom');

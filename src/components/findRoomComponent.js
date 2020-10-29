@@ -23,9 +23,12 @@ class FindRoom extends React.Component {
 
   onConfirm = (roomList) => {
     const rooms = roomList.room ? roomList.room : []
-
     const hasRoom = rooms.find(item => item.roomName === this.state.name)
-    if (hasRoom) {
+
+    if (this.state.name === '') {
+      alert('กรุณาใส่ชื่อห้อง')
+    }
+    else if (hasRoom) {
         this.props.setRoom(this.state.name)
         this.props.history.push('/chatRoom');
     } else {
