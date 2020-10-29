@@ -2,6 +2,12 @@
 
 Objective: A web-based, GraphQL-powered chat client
 
+## Build Setup And Run
+```bash
+$ docker-compose up
+```
+Go to http://localhost:3000
+
 ## Demo video
 
 See the demo video in `screenshots/`
