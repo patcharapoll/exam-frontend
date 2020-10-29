@@ -85,7 +85,8 @@ input {
   border-radius: 10px;
   background-color: #f1f1f1;
   width: 90%;
-  height: 80%;
+  height: 73.5%;
+  overflow-y: scroll;
 }
 
 .chat-blog .chat-from {
@@ -120,18 +121,17 @@ input {
 }
 
 .chat-box {
-  width: 99%;
-  position: absolute;
-  left: 0;
-  right: 0;
+  width: 89%;
+  position: fixed;
   bottom: 0;
+  margin-bottom: 70px;
 }
 
 .description {
   font-size: 17px;
   color: #6f6f6f;
-  position: absolute;
-  left: 92%;
+  position: fixed;
+  left: 87%;
   bottom: 0;
-  margin-bottom: 5px;
+  margin-bottom: 75px;
 }

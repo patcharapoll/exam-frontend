@@ -108,7 +108,8 @@ class ChatRoom extends React.Component {
                     }
                   });
                 }}/>
-                <Mutation mutation={SEND_MESSAGE}>
+             </div>
+             <Mutation mutation={SEND_MESSAGE}>
                   {(sendMessage) => (
                     <input
                       className="chat-box"
@@ -121,7 +122,6 @@ class ChatRoom extends React.Component {
                   )}
                 </Mutation>
                 <p className="description">Enter เพื่อส่ง</p>
-             </div>
             </div>
           );   
         }}
