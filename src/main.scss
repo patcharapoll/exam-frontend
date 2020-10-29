@@ -14,12 +14,124 @@ body,
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url("assets/images/bg.jpg");
+  position: fixed;
+  width: 100%;
 }
 
 .container {
   width: 90%;
   height: 90vh;
-  background-color: white;
+  background-color: #ffffff;
   border-radius: 20px;
   margin-top: 40px;
+  padding: 10px;
+}
+
+.logo {
+  position: fixed;
+  top: 10px;
+  zoom: .65;
+}
+
+.title {
+  font-size: 37px;
+  color: #383838;
+}
+
+.center {
+  text-align: center;
+}
+
+button {
+  font-size: 30px;
+  font-family: "Prompt", sans-serif;
+  padding: 20px 40px;
+  border-radius: 10px;
+  border: none;
+  color: #ffffff;
+  background-image: radial-gradient(ellipse farthest-corner at top left, #c41417 0%, #b31315 100%);
+}
+
+button.text { 
+  background-color: white;
+  background-image: none;
+  color: #6f6f6f;
+  font-family: "Prompt", sans-serif;
+}
+
+button.text:hover { 
+  background-color: white;
+  background-image: none;
+  color: #6f6f6f;
+  font-family: "Prompt", sans-serif;
+}
+
+input {
+  height: 60px;
+  color: #4e4e4e;
+  border: 3px solid lightgray;
+  border-radius: 10px;
+  font-size: 34px;
+  font-family: "Prompt", sans-serif;
+}
+
+.chat-title {
+  margin: 0;
+  padding: 0;
+}
+.chat-blog {
+  position: fixed;
+  border-radius: 10px;
+  background-color: #f1f1f1;
+  width: 90%;
+  height: 80%;
+}
+
+.chat-blog .chat-from {
+  margin-left: 15px;
+  font-weight: bold;
+  font-size: 15px;
+  color: #6f6f6f;
+}
+
+.chat-blog .chat-from-right {
+  margin: 20px 20px;
+  font-weight: bold;
+  font-size: 15px;
+  color: #6f6f6f;
+  position: absolute;
+  right: 0;
+}
+.chat-blog .chat-message-right {
+  background-color:  #e0dede;
+  margin: 70px 15px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  position: absolute;
+  right: 0;
+}
+
+.chat-blog .chat-message {
+  background-color:  #e0dede;
+  margin: 0px 30px;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.chat-box {
+  width: 99%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.description {
+  font-size: 17px;
+  color: #6f6f6f;
+  position: absolute;
+  left: 92%;
+  bottom: 0;
+  margin-bottom: 5px;
 }
